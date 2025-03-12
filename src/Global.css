@@ -1,0 +1,101 @@
+body {
+  padding: 0px;
+  margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0 !important;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navBarLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 20px;
+  padding: 16px;
+  background-color: #8497a3;
+  height: 100%;
+}
+a.navLink {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+header {
+  background-color: #8497a3 !important;
+}
+
+/* footer start */
+.sliderSlide {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.sliderSlide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.SwiperText {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+.sliderSlide h2 {
+  color: #fff;
+}
+
+.sliderSlide::before {
+  content: "";
+  background: rgb(0 0 0 / 53%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.TheamBtn {
+  background: #8497a3;
+  outline: none;
+  border: none;
+  padding: 10px;
+  max-width: 110px;
+  width: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  color: #fff;
+}
+.InputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.InputBox input {
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+  /* border: #efefef; */
+}
